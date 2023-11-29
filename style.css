@@ -1,0 +1,140 @@
+body {
+	font-family: Arial, sans-serif;
+	/*background:
+		linear-gradient(45deg, #007bff, #27ae60);*/
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.clock {
+	text-align: center;
+	background-image: linear-gradient(to top, #051937, #171228, #190a1a, #12040d, #000000);
+background-blend-mode: multiply;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	width: 300px;
+	height: 600px;
+}
+
+h1 {
+	font-size: 2rem;
+	color: white;
+}
+
+
+.time {
+	font-size: 2rem;
+	margin: 20px 0;
+	color: black;
+}
+
+.input-row {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.input-field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input[type="date"],
+input[type="time"] {
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	max-width: 200px;
+}
+
+.button-row {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#current-time-clock{
+    height: 10rem;
+    width: 10rem;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 2px, rgba(29, 220, 245, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.5) 0px 1px 0px inset;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#current-time-clock small{
+    color: rgb(216, 216, 216);
+    font-size: 1.1rem;
+}
+
+#day{
+    margin-bottom: 3.3%;
+}
+
+#current-time-clock span{
+    font-size: 2rem;
+}
+
+#current-time-clock img{
+    margin-top: 5%;
+    margin-left: 1.5%;
+    height: 25px;
+}
+
+#setAlarm,
+#updateTime {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+#setAlarm:hover,
+#updateTime:hover {
+	background-color: black;
+}
+
+.alarms {
+	margin-top: 20px;
+	text-align: left;
+	color: #333;
+}
+
+.alarm {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation: fadeIn 0.5s ease-in-out;
+	font-size: 14px;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

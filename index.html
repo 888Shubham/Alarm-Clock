@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Advanced Clock</title>
+</head>
+<body>
+
+    <div class="clock">
+        <h1>
+            Alarm Clock
+        </h1>
+        <section id="current-time-clock">
+            <small id="day">Thursday</small>
+            <small id="date">June 3, 2021</small>
+            <span id="hour">08 : 25</span>
+            <small id="second">02 SEC</small>
+        </section>
+        <div class="input-row">
+            <div class="input-field">
+                <label for="alarmDate">
+                    Select Date:
+                </label>
+                <input type="date"
+                       id="alarmDate"
+                       class="alarm-input"
+                       min="">
+            </div>
+            <div class="input-field">
+                <label for="alarmTime">
+                    Select Time:
+                </label>
+                <input type="time" id="alarmTime"
+                    class="alarm-input">
+            </div>
+            <button id="setAlarm">
+                Set Alarm
+            </button>
+        </div>
+        <div class="alarms" id="alarms">
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
